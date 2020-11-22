@@ -98,6 +98,8 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/filesystem/config.fs
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml \
