@@ -25,6 +25,16 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+PRODUCT_PACKAGES += \
+    TamaCarrierConfigOverlay \
+    TamaFrameworksOverlay \
+    TamaSettingsOverlay \
+    TamaSettingsProviderOverlay \
+    TamaSystemUIOverlay \
+    TamaTelephonyOverlay \
+    TetheringConfigOverlay \
+    WifiOverlay
+    
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # A/B
@@ -404,10 +414,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# Tethering
-PRODUCT_PACKAGES += \
-    TetheringConfigOverlay
-
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.tama
@@ -439,7 +445,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
