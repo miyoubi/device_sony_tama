@@ -25,7 +25,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "akari akatsuki aurora xz2c"
+write_headers "akari akari_kddi akatsuki akatsuki_kddi aurora aurora_kddi xz2c xz2c_kddi"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
