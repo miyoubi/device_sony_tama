@@ -46,8 +46,11 @@
       "Name": "GPUMaxFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
       "Values": [
+        "999999999",
         "710000000",
-        "342000000"
+        "520000000",
+        "342000000",
+        "257000000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -401,7 +404,7 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUIdleTimer",
-      "Duration": 3000,
+      "Duration": 1000,
       "Value": "10000"
     },
     {
@@ -460,6 +463,12 @@
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUIdleTimer",
+      "Duration": 0,
+      "Value": "10000"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
       "Value": "520000000"
@@ -468,7 +477,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "710000000"
+      "Value": "999999999"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
@@ -481,6 +490,12 @@
       "Node": "FgSchedtunePreferIdle",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "GPUMaxFreq",
+      "Duration": 0,
+      "Value": "257000000"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
