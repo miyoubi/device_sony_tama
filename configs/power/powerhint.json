@@ -16,7 +16,9 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
+        "1228800",
         "1132800",
+        "1056000",
         "576000"
       ],
       "ResetOnInit": true
@@ -26,7 +28,10 @@
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1363200"
+        "2323200",
+        "1363200",
+        "1056000",
+        "825600"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -35,10 +40,10 @@
       "Name": "CPUBigClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
       "Values": [
-        "9999999",
-        "1459200",
-        "1209600",
-        "0",
+        "2323200",
+        "1363200",
+        "1056000",
+        "825600"
       ],
       "ResetOnInit": true
     },
@@ -267,7 +272,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1363200"
+      "Value": "1056000"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
@@ -291,7 +296,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "1209600"
+      "Value": "1363200"
     },
     {
       "PowerHint": "INTERACTION",
@@ -345,13 +350,13 @@
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 1000,
-      "Value": "9999999"
+      "Value": "2323200"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1000,
-      "Value": "9999999"
+      "Value": "1363200"
     },
     {
       "PowerHint": "LAUNCH",
@@ -435,7 +440,7 @@
       "PowerHint": "AUDIO_LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 2000,
-      "Value": "9999999"
+      "Value": "2323200"
     },
     {
       "PowerHint": "AUDIO_LAUNCH",
