@@ -369,6 +369,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# Platform
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := sdm845
+
 # QMI
 PRODUCT_PACKAGES += \
     libsqlite.vendor:64 \
