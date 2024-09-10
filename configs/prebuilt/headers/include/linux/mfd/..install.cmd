@@ -1,0 +1,1 @@
+cmd_out/include/linux/mfd/.install := /bin/sh scripts/headers_install.sh out/include/linux/mfd ./include/uapi/linux/mfd msm-adie-codec.h; /bin/sh scripts/headers_install.sh out/include/linux/mfd ./include/generated/uapi/linux/mfd ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > out/include/linux/mfd/$$F; done; touch out/include/linux/mfd/.install

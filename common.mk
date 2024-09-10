@@ -286,6 +286,9 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/tama-common/configs/prebuilt/headers
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor

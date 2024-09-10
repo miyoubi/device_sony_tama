@@ -1,0 +1,1 @@
+cmd_out/include/linux/genwqe/.install := /bin/sh scripts/headers_install.sh out/include/linux/genwqe ./include/uapi/linux/genwqe ; /bin/sh scripts/headers_install.sh out/include/linux/genwqe ./include/generated/uapi/linux/genwqe ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > out/include/linux/genwqe/$$F; done; touch out/include/linux/genwqe/.install

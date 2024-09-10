@@ -1,0 +1,1 @@
+cmd_out/include/linux/android/.install := /bin/sh scripts/headers_install.sh out/include/linux/android ./include/uapi/linux/android binder.h; /bin/sh scripts/headers_install.sh out/include/linux/android ./include/generated/uapi/linux/android ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > out/include/linux/android/$$F; done; touch out/include/linux/android/.install

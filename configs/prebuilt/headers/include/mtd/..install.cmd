@@ -1,0 +1,1 @@
+cmd_out/include/mtd/.install := /bin/sh scripts/headers_install.sh out/include/mtd ./include/uapi/mtd inftl-user.h mtd-abi.h mtd-user.h nftl-user.h ubi-user.h; /bin/sh scripts/headers_install.sh out/include/mtd ./include/generated/uapi/mtd ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > out/include/mtd/$$F; done; touch out/include/mtd/.install
