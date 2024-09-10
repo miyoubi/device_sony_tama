@@ -1,0 +1,8 @@
+  android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/default (@4)
+  android.hardware.drm.IDrmFactory/clearkey (@1)
+  android.hardware.light.ILights/default (@2)
+  android.hardware.usb.gadget@1.2::IUsbGadget/default
+  android.hardware.vibrator.IVibrator/default (@2)
+  android.hardware.wifi.IWifi/default (@2)
+  android.hardware.wifi.hostapd.IHostapd/default (@2)
+  android.hardware.wifi.supplicant.ISupplicant/default (@3)

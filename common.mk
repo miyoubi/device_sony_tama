@@ -287,7 +287,7 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml
 
 # Kernel Headers
-PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/tama-common/configs/prebuilt/headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/tama-common/configs/prebuilt/kernel-headers
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -336,7 +336,7 @@ PRODUCT_PACKAGES += \
 
 # Neural networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.2.vendor
+    android.hardware.neuralnetworks@1.3.vendor
 
 # NFC
 PRODUCT_PACKAGES += \

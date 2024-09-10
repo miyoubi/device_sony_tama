@@ -1,4 +1,28 @@
-<compatibility-matrix version="2.0" type="framework">
+<compatibility-matrix version="2.0" type="framework" target-level="5">
+   <hal format="aidl" optional="true">
+        <name>android.hardware.bluetooth.audio</name>
+        <version>4</version>
+        <interface>
+            <name>IBluetoothAudioProviderFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.drm</name>
+        <version>1</version>
+        <interface>
+            <name>IDrmFactory</name>
+            <instance>clearkey</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.light</name>
+        <version>2</version>
+        <interface>
+            <name>ILights</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>com.fingerprints.extension</name>
         <version>1.0</version>
@@ -55,6 +79,23 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.usb.gadget</name>
+       <version>1.0-2</version>
+       <interface>
+          <name>IUsbGadget</name>
+          <instance>default</instance>
+       </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.vibrator</name>
+        <version>2</version>
+        <interface>
+            <name>IVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
     <hal format="hidl" optional="true">
         <name>vendor.semc.hardware.vibrator</name>
         <version>1.0</version>
@@ -150,6 +191,30 @@
         <version>2.1</version>
         <interface>
             <name>ISomcWifiDriver</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi</name>
+        <version>2</version>
+        <interface>
+            <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi.hostapd</name>
+        <version>2</version>
+        <interface>
+            <name>IHostapd</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi.supplicant</name>
+	<version>3</version>
+        <interface>
+            <name>ISupplicant</name>
             <instance>default</instance>
         </interface>
     </hal>
