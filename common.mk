@@ -210,6 +210,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI
 
+# DeviceAsWebcam
+PRODUCT_PACKAGES += \
+    DeviceAsWebcam
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
